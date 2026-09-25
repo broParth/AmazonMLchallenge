@@ -1,0 +1,290 @@
+{
+  "audit_metadata": {
+    "generated_at_utc": "2026-09-25T07:01:46.302345+00:00",
+    "script": "tools/analyze_training_pairs.py",
+    "script_version": "1.0.0",
+    "search_root": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge",
+    "random_seed": 1337,
+    "sampling_used": true,
+    "max_pairs_for_similarity": 200000,
+    "negative_sample_size_requested": 20000,
+    "cap_per_key": 5,
+    "country_sample_cap": 2000,
+    "skip_corpus_frequency": true,
+    "skip_tfidf": false,
+    "note": "This report reflects only what this script read from disk on the machine where it was executed. No dataset file was modified. True-match similarity statistics are computed on a fixed-size, seeded reservoir sample of match pairs, not the full population, when the population exceeds max_pairs_for_similarity -- see 'pair_sampling' below for exact counts."
+  },
+  "pair_sampling": {
+    "total_true_match_pairs_in_ground_truth": 7638365,
+    "pairs_sampled_for_similarity_analysis": 200000,
+    "pairs_resolvable_to_records": 200000,
+    "pairs_unresolvable": 0
+  },
+  "section_1_ground_truth_structure": {
+    "n_ground_truth_rows": 2206821,
+    "n_s1_entities_with_valid_row": 2206821,
+    "singleton_count": 123247,
+    "match_count_distribution": {
+      "0": 123247,
+      "1": 119157,
+      "2": 375212,
+      "3": 530841,
+      "4": 484115,
+      "5": 321957,
+      "6": 164868,
+      "7": 63968,
+      "8": 18680,
+      "9": 4205,
+      "10": 534,
+      "11": 37
+    },
+    "s2_only_count": 143029,
+    "s3_only_count": 164498,
+    "both_s2_and_s3_count": 1776047,
+    "unclassified_matched_id_prefix_count": 0,
+    "unclassified_matched_id_prefix_examples": [],
+    "column_detection_note": null
+  },
+  "section_2_3_4_true_match_similarity": {
+    "name_exact_raw_rate": 0.04639,
+    "name_exact_normalized_rate": 0.219215,
+    "name_levenshtein_similarity": {
+      "count": 200000,
+      "min": 0.0,
+      "median": 0.7894736842105263,
+      "mean": 0.7193,
+      "p90": 1.0,
+      "p99": 1.0,
+      "max": 1.0
+    },
+    "name_jaccard": {
+      "count": 200000,
+      "min": 0.0,
+      "median": 0.6666666666666666,
+      "mean": 0.6162,
+      "p90": 1.0,
+      "p99": 1.0,
+      "max": 1.0
+    },
+    "name_tfidf_cosine": null,
+    "name_tfidf_note": "TF-IDF cosine skipped: scikit-learn is not installed in this environment.",
+    "address_exact_raw_rate": 0.021905,
+    "address_exact_normalized_rate": 0.08252,
+    "address_levenshtein_similarity": {
+      "count": 200000,
+      "min": 0.0,
+      "median": 0.7105263157894737,
+      "mean": 0.6389,
+      "p90": 0.9591836734693877,
+      "p99": 1.0,
+      "max": 1.0
+    },
+    "address_jaccard": {
+      "count": 200000,
+      "min": 0.0,
+      "median": 0.625,
+      "mean": 0.5967,
+      "p90": 1.0,
+      "p99": 1.0,
+      "max": 1.0
+    },
+    "either_address_empty_rate": 0.04395,
+    "country_equal_rate_where_both_known": 1.0,
+    "country_cross_label_true_match_count": 0,
+    "country_equality_known_pair_count": 200000
+  },
+  "section_5_evidence_buckets": {
+    "name=exact/address=strong": 12284,
+    "name=strong/address=dissimilar": 6281,
+    "name=weak/address=exact": 7175,
+    "name=weak/address=weak": 34081,
+    "name=exact/address=dissimilar": 7329,
+    "name=exact/address=weak": 19291,
+    "name=weak/address=strong": 22099,
+    "name=dissimilar/address=dissimilar": 8203,
+    "name=strong/address=strong": 10728,
+    "name=strong/address=weak": 16398,
+    "name=dissimilar/address=weak": 14829,
+    "name=weak/address=empty": 3802,
+    "name=weak/address=dissimilar": 13595,
+    "name=dissimilar/address=exact": 4274,
+    "name=strong/address=empty": 2013,
+    "name=strong/address=exact": 2404,
+    "name=dissimilar/address=strong": 9588,
+    "name=dissimilar/address=empty": 687,
+    "name=exact/address=exact": 2651,
+    "name=exact/address=empty": 2288
+  },
+  "section_5_thresholds_used_analytical_only": {
+    "name_strong_threshold": 0.85,
+    "name_weak_threshold": 0.5,
+    "address_strong_threshold": 0.8,
+    "address_weak_threshold": 0.4,
+    "note": "These are analytical bins chosen to summarize observed data for this report only. They are NOT proposed as final model thresholds."
+  },
+  "section_6_singleton_diagnostics": {
+    "singleton_total": 123247,
+    "singleton_examples_analyzed": 50,
+    "note": "Diagnostics below run on 50 of 123247 singleton entities (capped example list from Pass A, not a fresh random sample of the full singleton population). Frequency-based checks SKIPPED (--skip-corpus-frequency).",
+    "has_exact_name_dup_in_s2_or_s3": 0,
+    "has_exact_address_dup_in_s2_or_s3": 0
+  },
+  "section_7_positive_match_ambiguity": {
+    "note": "Skipped (--skip-corpus-frequency).",
+    "name_ambiguous_count": 0,
+    "address_ambiguous_count": 0,
+    "name_address_ambiguous_count": 0,
+    "pairs_checked": 0
+  },
+  "section_8_region_specific": {
+    "US": {
+      "present_in_sampled_training_pairs": true,
+      "sampled_pair_count": 119851,
+      "name_levenshtein_sim": {
+        "count": 119851,
+        "min": 0.0,
+        "median": 0.8333333333333334,
+        "mean": 0.7836,
+        "p90": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "addr_levenshtein_sim": {
+        "count": 119851,
+        "min": 0.0,
+        "median": 0.7096774193548387,
+        "mean": 0.64,
+        "p90": 0.962962962962963,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "name_exact_norm_rate": 0.259338678859584
+    },
+    "India": {
+      "present_in_sampled_training_pairs": true,
+      "sampled_pair_count": 80149,
+      "name_levenshtein_sim": {
+        "count": 80149,
+        "min": 0.0,
+        "median": 0.7037037037037037,
+        "mean": 0.6232,
+        "p90": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "addr_levenshtein_sim": {
+        "count": 80149,
+        "min": 0.0,
+        "median": 0.7142857142857143,
+        "mean": 0.6373,
+        "p90": 0.9558823529411765,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "name_exact_norm_rate": 0.15921596027398968
+    },
+    "France": {
+      "present_in_sampled_training_pairs": false,
+      "note": "'France' did not appear (by exact string match) in the sampled training pairs' country fields. Not fabricating a breakdown for it. Note this checks exact string equality only -- alternate spellings/codes are not normalized against an external country list."
+    }
+  },
+  "section_9_blocking_experiments": [
+    {
+      "rule": "exact_normalized_business_name",
+      "recall": 0.219215,
+      "candidate_set_size_stats": "not computed (--skip-corpus-frequency or no data)"
+    },
+    {
+      "rule": "first_token_of_normalized_name",
+      "recall": 0.72616,
+      "candidate_set_size_stats": "not computed (--skip-corpus-frequency or no data)"
+    },
+    {
+      "rule": "country_plus_first_name_token",
+      "recall": 0.72616,
+      "candidate_set_size_stats": "not computed (--skip-corpus-frequency or no data)"
+    },
+    {
+      "rule": "any_shared_address_token",
+      "recall": 0.95592,
+      "candidate_set_size_stats": "not computed (would require a full address-token inverted index over the corpus; not built by this script -- see limitations)",
+      "note": "Recall computed over 200000 sampled pairs with at least one non-empty address on both sides."
+    }
+  ],
+  "section_10_positive_vs_negative": {
+    "positive": {
+      "name_levenshtein_sim": {
+        "count": 200000,
+        "min": 0.0,
+        "median": 0.7894736842105263,
+        "mean": 0.7193,
+        "p90": 1.0,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "addr_levenshtein_sim": {
+        "count": 200000,
+        "min": 0.0,
+        "median": 0.7105263157894737,
+        "mean": 0.6389,
+        "p90": 0.9591836734693877,
+        "p99": 1.0,
+        "max": 1.0
+      },
+      "name_exact_norm_rate": 0.219215,
+      "addr_exact_norm_rate": 0.08252,
+      "country_equal_rate": 1.0
+    },
+    "negatives": {
+      "same_country_random": {
+        "count_constructed": 20000,
+        "requested": 20000,
+        "skipped": false,
+        "name_levenshtein_sim": {
+          "count": 20000,
+          "min": 0.0,
+          "median": 0.1923076923076923,
+          "mean": 0.2079,
+          "p90": 0.33333333333333337,
+          "p99": 0.5757575757575757,
+          "max": 0.8064516129032258
+        },
+        "addr_levenshtein_sim": {
+          "count": 20000,
+          "min": 0.0,
+          "median": 0.20656665468918434,
+          "mean": 0.2036,
+          "p90": 0.27586206896551724,
+          "p99": 0.3793103448275862,
+          "max": 0.6451612903225806
+        },
+        "name_exact_norm_rate": 0.0,
+        "addr_exact_norm_rate": 0.0,
+        "country_equal_rate": 1.0
+      },
+      "same_name_diff_entity": {
+        "count_constructed": 0,
+        "requested": 20000,
+        "skipped": true,
+        "reason": "SKIPPED (--skip-corpus-frequency): this category depends on name_index_capped/address_index_capped, which are only built when --skip-corpus-frequency is NOT set. A count of 0 here is a structural consequence of that flag, not evidence about the data. Re-run without --skip-corpus-frequency to get a real reading for this category.",
+        "name_levenshtein_sim": null,
+        "addr_levenshtein_sim": null,
+        "name_exact_norm_rate": null,
+        "addr_exact_norm_rate": null,
+        "country_equal_rate": null
+      },
+      "same_address_diff_entity": {
+        "count_constructed": 0,
+        "requested": 20000,
+        "skipped": true,
+        "reason": "SKIPPED (--skip-corpus-frequency): this category depends on name_index_capped/address_index_capped, which are only built when --skip-corpus-frequency is NOT set. A count of 0 here is a structural consequence of that flag, not evidence about the data. Re-run without --skip-corpus-frequency to get a real reading for this category.",
+        "name_levenshtein_sim": null,
+        "addr_levenshtein_sim": null,
+        "name_exact_norm_rate": null,
+        "addr_exact_norm_rate": null,
+        "country_equal_rate": null
+      }
+    },
+    "note": "Negative pairs are a CONSTRUCTED, DETERMINISTIC-SEED SAMPLE built only from capped indexes of the training corpora (at most cap_per_key example records per normalized name/address, at most country_sample_cap per country). They do NOT represent the full negative population and are not a random sample of all possible non-match pairs -- see limitations."
+  }
+}

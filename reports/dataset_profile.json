@@ -1,0 +1,529 @@
+{
+  "audit_metadata": {
+    "generated_at_utc": "2026-09-25T05:51:29.920890+00:00",
+    "search_root": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge",
+    "script": "tools/profile_dataset.py",
+    "note": "This report reflects only what this script read from disk on the machine where it was executed. No data was modified. Exact-string duplicate counts are NOT entity-matching results."
+  },
+  "expected_files_found": {
+    "train_source1.tsv": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_source1.tsv",
+    "train_source2.tsv": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_source2.tsv",
+    "train_source3.tsv": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_source3.tsv",
+    "test_source1.tsv": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\test\\test_source1.tsv",
+    "test_source2.tsv": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\test\\test_source2.tsv",
+    "test_source3.tsv": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\test\\test_source3.tsv",
+    "train_ground_truth.tsv": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_ground_truth.tsv"
+  },
+  "source_files": {
+    "train_source1.tsv": {
+      "filename": "train_source1.tsv",
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_source1.tsv",
+      "split": "train",
+      "source_num": "1",
+      "read_error": null,
+      "encoding_used": "utf-8",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "row_count": 2206821,
+      "blank_row_count": 0,
+      "missing_expected_columns": [],
+      "entity_id_total": 2206821,
+      "entity_id_empty": 0,
+      "entity_id_unique_count": 2206821,
+      "entity_id_duplicate_value_count": 0,
+      "entity_id_duplicate_row_count": 0,
+      "entity_id_duplicate_examples": [],
+      "entity_id_prefix_violations": 0,
+      "entity_id_prefix_violation_examples": [],
+      "per_column_empty": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "per_column_whitespace_only": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "business_name_length": {
+        "count": 2206821,
+        "min": 3,
+        "max": 105,
+        "mean": 24.03
+      },
+      "business_address_length": {
+        "count": 2206821,
+        "min": 11,
+        "max": 256,
+        "mean": 52.07
+      },
+      "business_name_leading_trailing_ws": 0,
+      "business_address_leading_trailing_ws": 0,
+      "business_name_non_ascii_count": 0,
+      "business_address_non_ascii_count": 554,
+      "country_distinct_count": 2,
+      "country_top_values": [
+        {
+          "value": "US",
+          "count": 1323633
+        },
+        {
+          "value": "India",
+          "count": 883188
+        }
+      ],
+      "country_missing_or_empty": 0,
+      "duplicate_business_name_value_count": 177793,
+      "duplicate_business_name_row_count": 667592,
+      "duplicate_business_address_value_count": 40089,
+      "duplicate_business_address_row_count": 76215,
+      "duplicate_name_address_value_count": 0,
+      "duplicate_name_address_row_count": 0
+    },
+    "train_source2.tsv": {
+      "filename": "train_source2.tsv",
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_source2.tsv",
+      "split": "train",
+      "source_num": "2",
+      "read_error": null,
+      "encoding_used": "utf-8",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "row_count": 5034616,
+      "blank_row_count": 0,
+      "missing_expected_columns": [],
+      "entity_id_total": 5034616,
+      "entity_id_empty": 0,
+      "entity_id_unique_count": 5034616,
+      "entity_id_duplicate_value_count": 0,
+      "entity_id_duplicate_row_count": 0,
+      "entity_id_duplicate_examples": [],
+      "entity_id_prefix_violations": 0,
+      "entity_id_prefix_violation_examples": [],
+      "per_column_empty": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 168967,
+        "country": 0
+      },
+      "per_column_whitespace_only": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "business_name_length": {
+        "count": 5034616,
+        "min": 2,
+        "max": 104,
+        "mean": 25.1
+      },
+      "business_address_length": {
+        "count": 5034616,
+        "min": 0,
+        "max": 249,
+        "mean": 46.23
+      },
+      "business_name_leading_trailing_ws": 0,
+      "business_address_leading_trailing_ws": 0,
+      "business_name_non_ascii_count": 764608,
+      "business_address_non_ascii_count": 478453,
+      "country_distinct_count": 2,
+      "country_top_values": [
+        {
+          "value": "US",
+          "count": 3016817
+        },
+        {
+          "value": "India",
+          "count": 2017799
+        }
+      ],
+      "country_missing_or_empty": 0,
+      "duplicate_business_name_value_count": 239779,
+      "duplicate_business_name_row_count": 632607,
+      "duplicate_business_address_value_count": 421472,
+      "duplicate_business_address_row_count": 528388,
+      "duplicate_name_address_value_count": 24875,
+      "duplicate_name_address_row_count": 25688
+    },
+    "train_source3.tsv": {
+      "filename": "train_source3.tsv",
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_source3.tsv",
+      "split": "train",
+      "source_num": "3",
+      "read_error": null,
+      "encoding_used": "utf-8",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "row_count": 5285603,
+      "blank_row_count": 0,
+      "missing_expected_columns": [],
+      "entity_id_total": 5285603,
+      "entity_id_empty": 0,
+      "entity_id_unique_count": 5285603,
+      "entity_id_duplicate_value_count": 0,
+      "entity_id_duplicate_row_count": 0,
+      "entity_id_duplicate_examples": [],
+      "entity_id_prefix_violations": 0,
+      "entity_id_prefix_violation_examples": [],
+      "per_column_empty": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 175916,
+        "country": 0
+      },
+      "per_column_whitespace_only": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "business_name_length": {
+        "count": 5285603,
+        "min": 2,
+        "max": 123,
+        "mean": 25.2
+      },
+      "business_address_length": {
+        "count": 5285603,
+        "min": 0,
+        "max": 240,
+        "mean": 46.71
+      },
+      "business_name_leading_trailing_ws": 0,
+      "business_address_leading_trailing_ws": 0,
+      "business_name_non_ascii_count": 606737,
+      "business_address_non_ascii_count": 476588,
+      "country_distinct_count": 2,
+      "country_top_values": [
+        {
+          "value": "US",
+          "count": 3170056
+        },
+        {
+          "value": "India",
+          "count": 2115547
+        }
+      ],
+      "country_missing_or_empty": 0,
+      "duplicate_business_name_value_count": 258276,
+      "duplicate_business_name_row_count": 633994,
+      "duplicate_business_address_value_count": 382890,
+      "duplicate_business_address_row_count": 476923,
+      "duplicate_name_address_value_count": 18162,
+      "duplicate_name_address_row_count": 18641
+    },
+    "test_source1.tsv": {
+      "filename": "test_source1.tsv",
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\test\\test_source1.tsv",
+      "split": "test",
+      "source_num": "1",
+      "read_error": null,
+      "encoding_used": "utf-8",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "row_count": 1732544,
+      "blank_row_count": 0,
+      "missing_expected_columns": [],
+      "entity_id_total": 1732544,
+      "entity_id_empty": 0,
+      "entity_id_unique_count": 1732544,
+      "entity_id_duplicate_value_count": 0,
+      "entity_id_duplicate_row_count": 0,
+      "entity_id_duplicate_examples": [],
+      "entity_id_prefix_violations": 0,
+      "entity_id_prefix_violation_examples": [],
+      "per_column_empty": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "per_column_whitespace_only": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "business_name_length": {
+        "count": 1732544,
+        "min": 3,
+        "max": 92,
+        "mean": 23.84
+      },
+      "business_address_length": {
+        "count": 1732544,
+        "min": 11,
+        "max": 268,
+        "mean": 57.21
+      },
+      "business_name_leading_trailing_ws": 0,
+      "business_address_leading_trailing_ws": 0,
+      "business_name_non_ascii_count": 40789,
+      "business_address_non_ascii_count": 73800,
+      "country_distinct_count": 3,
+      "country_top_values": [
+        {
+          "value": "India",
+          "count": 809986
+        },
+        {
+          "value": "US",
+          "count": 663106
+        },
+        {
+          "value": "France",
+          "count": 259452
+        }
+      ],
+      "country_missing_or_empty": 0,
+      "duplicate_business_name_value_count": 129955,
+      "duplicate_business_name_row_count": 493677,
+      "duplicate_business_address_value_count": 31396,
+      "duplicate_business_address_row_count": 55061,
+      "duplicate_name_address_value_count": 0,
+      "duplicate_name_address_row_count": 0
+    },
+    "test_source2.tsv": {
+      "filename": "test_source2.tsv",
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\test\\test_source2.tsv",
+      "split": "test",
+      "source_num": "2",
+      "read_error": null,
+      "encoding_used": "utf-8",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "row_count": 4887273,
+      "blank_row_count": 0,
+      "missing_expected_columns": [],
+      "entity_id_total": 4887273,
+      "entity_id_empty": 0,
+      "entity_id_unique_count": 4887273,
+      "entity_id_duplicate_value_count": 0,
+      "entity_id_duplicate_row_count": 0,
+      "entity_id_duplicate_examples": [],
+      "entity_id_prefix_violations": 0,
+      "entity_id_prefix_violation_examples": [],
+      "per_column_empty": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 129408,
+        "country": 0
+      },
+      "per_column_whitespace_only": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "business_name_length": {
+        "count": 4887273,
+        "min": 2,
+        "max": 102,
+        "mean": 25.7
+      },
+      "business_address_length": {
+        "count": 4887273,
+        "min": 0,
+        "max": 269,
+        "mean": 50.41
+      },
+      "business_name_leading_trailing_ws": 0,
+      "business_address_leading_trailing_ws": 0,
+      "business_name_non_ascii_count": 928158,
+      "business_address_non_ascii_count": 720665,
+      "country_distinct_count": 3,
+      "country_top_values": [
+        {
+          "value": "India",
+          "count": 2312565
+        },
+        {
+          "value": "US",
+          "count": 1871330
+        },
+        {
+          "value": "France",
+          "count": 703378
+        }
+      ],
+      "country_missing_or_empty": 0,
+      "duplicate_business_name_value_count": 223103,
+      "duplicate_business_name_row_count": 576232,
+      "duplicate_business_address_value_count": 444698,
+      "duplicate_business_address_row_count": 533082,
+      "duplicate_name_address_value_count": 21737,
+      "duplicate_name_address_row_count": 22468
+    },
+    "test_source3.tsv": {
+      "filename": "test_source3.tsv",
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\test\\test_source3.tsv",
+      "split": "test",
+      "source_num": "3",
+      "read_error": null,
+      "encoding_used": "utf-8",
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "row_count": 5082316,
+      "blank_row_count": 0,
+      "missing_expected_columns": [],
+      "entity_id_total": 5082316,
+      "entity_id_empty": 0,
+      "entity_id_unique_count": 5082316,
+      "entity_id_duplicate_value_count": 0,
+      "entity_id_duplicate_row_count": 0,
+      "entity_id_duplicate_examples": [],
+      "entity_id_prefix_violations": 0,
+      "entity_id_prefix_violation_examples": [],
+      "per_column_empty": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 136098,
+        "country": 0
+      },
+      "per_column_whitespace_only": {
+        "entity_id": 0,
+        "business_name": 0,
+        "business_address": 0,
+        "country": 0
+      },
+      "business_name_length": {
+        "count": 5082316,
+        "min": 2,
+        "max": 103,
+        "mean": 25.66
+      },
+      "business_address_length": {
+        "count": 5082316,
+        "min": 0,
+        "max": 267,
+        "mean": 48.74
+      },
+      "business_name_leading_trailing_ws": 0,
+      "business_address_leading_trailing_ws": 0,
+      "business_name_non_ascii_count": 737515,
+      "business_address_non_ascii_count": 729222,
+      "country_distinct_count": 3,
+      "country_top_values": [
+        {
+          "value": "India",
+          "count": 2405000
+        },
+        {
+          "value": "US",
+          "count": 1945701
+        },
+        {
+          "value": "France",
+          "count": 731615
+        }
+      ],
+      "country_missing_or_empty": 0,
+      "duplicate_business_name_value_count": 238156,
+      "duplicate_business_name_row_count": 560387,
+      "duplicate_business_address_value_count": 404756,
+      "duplicate_business_address_row_count": 489783,
+      "duplicate_name_address_value_count": 15680,
+      "duplicate_name_address_row_count": 16110
+    }
+  },
+  "ground_truth_file": {
+    "filename": "train_ground_truth.tsv",
+    "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_ground_truth.tsv",
+    "read_error": null,
+    "encoding_used": "utf-8",
+    "header": [
+      "source1_entity_id",
+      "matched_entity_ids"
+    ],
+    "row_count": 2206821,
+    "blank_row_count": 0,
+    "id_column_used": "source1_entity_id",
+    "match_column_used": "matched_entity_ids",
+    "column_detection_note": null,
+    "source1_id_total": 2206821,
+    "source1_id_empty": 0,
+    "source1_id_duplicate_value_count": 0,
+    "source1_id_duplicate_row_count": 0,
+    "source1_id_duplicate_examples": [],
+    "singleton_row_count": 123247,
+    "match_count_distribution": {
+      "0": 123247,
+      "1": 119157,
+      "2": 375212,
+      "3": 530841,
+      "4": 484115,
+      "5": 321957,
+      "6": 164868,
+      "7": 63968,
+      "8": 18680,
+      "9": 4205,
+      "10": 534,
+      "11": 37
+    },
+    "unknown_source1_id_count": 0,
+    "unknown_source1_id_examples": [],
+    "unknown_matched_id_count": 0,
+    "unknown_matched_id_examples": [],
+    "s1_id_used_as_matched_count": 0,
+    "s1_id_used_as_matched_examples": []
+  },
+  "findings": {
+    "confirmed_issues": [],
+    "observed_statistics": [
+      "train_source1.tsv: 2206821 data rows, 2206821 unique entity_id, 2 distinct country values",
+      "train_source2.tsv: 5034616 data rows, 5034616 unique entity_id, 2 distinct country values",
+      "train_source2.tsv: 764608 business_name value(s) contain non-ASCII characters (expected due to transliteration; not treated as an error)",
+      "train_source3.tsv: 5285603 data rows, 5285603 unique entity_id, 2 distinct country values",
+      "train_source3.tsv: 606737 business_name value(s) contain non-ASCII characters (expected due to transliteration; not treated as an error)",
+      "test_source1.tsv: 1732544 data rows, 1732544 unique entity_id, 3 distinct country values",
+      "test_source1.tsv: 40789 business_name value(s) contain non-ASCII characters (expected due to transliteration; not treated as an error)",
+      "test_source2.tsv: 4887273 data rows, 4887273 unique entity_id, 3 distinct country values",
+      "test_source2.tsv: 928158 business_name value(s) contain non-ASCII characters (expected due to transliteration; not treated as an error)",
+      "test_source3.tsv: 5082316 data rows, 5082316 unique entity_id, 3 distinct country values",
+      "test_source3.tsv: 737515 business_name value(s) contain non-ASCII characters (expected due to transliteration; not treated as an error)",
+      "train_ground_truth.tsv: 2206821 data rows, 123247 row(s) with an empty match list",
+      "source1: 'France' present in test country values: True",
+      "source2: 'France' present in test country values: True",
+      "source3: 'France' present in test country values: True"
+    ],
+    "items_requiring_review": [
+      "train_source1.tsv: 177793 exact-duplicate business_name value(s) and 40089 exact-duplicate business_address value(s) observed (raw string duplicates only -- NOT entity matching; may or may not indicate the same real-world business)",
+      "train_source2.tsv: 239779 exact-duplicate business_name value(s) and 421472 exact-duplicate business_address value(s) observed (raw string duplicates only -- NOT entity matching; may or may not indicate the same real-world business)",
+      "train_source3.tsv: 258276 exact-duplicate business_name value(s) and 382890 exact-duplicate business_address value(s) observed (raw string duplicates only -- NOT entity matching; may or may not indicate the same real-world business)",
+      "test_source1.tsv: 129955 exact-duplicate business_name value(s) and 31396 exact-duplicate business_address value(s) observed (raw string duplicates only -- NOT entity matching; may or may not indicate the same real-world business)",
+      "test_source2.tsv: 223103 exact-duplicate business_name value(s) and 444698 exact-duplicate business_address value(s) observed (raw string duplicates only -- NOT entity matching; may or may not indicate the same real-world business)",
+      "test_source3.tsv: 238156 exact-duplicate business_name value(s) and 404756 exact-duplicate business_address value(s) observed (raw string duplicates only -- NOT entity matching; may or may not indicate the same real-world business)",
+      "source1: countries appearing in test but not in train: ['France']",
+      "source2: countries appearing in test but not in train: ['France']",
+      "source3: countries appearing in test but not in train: ['France']"
+    ]
+  }
+}
