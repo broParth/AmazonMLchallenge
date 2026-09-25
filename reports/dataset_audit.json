@@ -1,0 +1,180 @@
+{
+  "audit_metadata": {
+    "generated_at_utc": "2026-09-25T05:10:42.445457+00:00",
+    "search_root": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge",
+    "script": "tools/audit_dataset.py",
+    "note": "This report reflects only what this script read from disk on the machine where it was executed. No data was modified."
+  },
+  "expected_files_not_found": [],
+  "tsv_files_found_but_not_expected_by_name": [],
+  "files": [
+    {
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\test\\test_source1.tsv",
+      "role": "source",
+      "size_bytes": 175022086,
+      "encoding_used": "utf-8",
+      "encoding_error": null,
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "header_field_count": 4,
+      "data_row_count": 1732544,
+      "blank_row_count": 0,
+      "duplicate_header_count": 0,
+      "malformed_row_count": 0,
+      "malformed_row_examples": [],
+      "missing_expected_columns": [],
+      "unexpected_extra_columns": [],
+      "non_tab_delimiter_suspected": false,
+      "read_error": null,
+      "other_anomalies": []
+    },
+    {
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\test\\test_source2.tsv",
+      "role": "source",
+      "size_bytes": 509456422,
+      "encoding_used": "utf-8",
+      "encoding_error": null,
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "header_field_count": 4,
+      "data_row_count": 4887273,
+      "blank_row_count": 0,
+      "duplicate_header_count": 0,
+      "malformed_row_count": 0,
+      "malformed_row_examples": [],
+      "missing_expected_columns": [],
+      "unexpected_extra_columns": [],
+      "non_tab_delimiter_suspected": false,
+      "read_error": null,
+      "other_anomalies": []
+    },
+    {
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\test\\test_source3.tsv",
+      "role": "source",
+      "size_bytes": 506002772,
+      "encoding_used": "utf-8",
+      "encoding_error": null,
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "header_field_count": 4,
+      "data_row_count": 5082316,
+      "blank_row_count": 0,
+      "duplicate_header_count": 0,
+      "malformed_row_count": 0,
+      "malformed_row_examples": [],
+      "missing_expected_columns": [],
+      "unexpected_extra_columns": [],
+      "non_tab_delimiter_suspected": false,
+      "read_error": null,
+      "other_anomalies": []
+    },
+    {
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_ground_truth.tsv",
+      "role": "ground_truth",
+      "size_bytes": 127015583,
+      "encoding_used": "utf-8",
+      "encoding_error": null,
+      "header": [
+        "source1_entity_id",
+        "matched_entity_ids"
+      ],
+      "header_field_count": 2,
+      "data_row_count": 2206821,
+      "blank_row_count": 0,
+      "duplicate_header_count": 0,
+      "malformed_row_count": 0,
+      "malformed_row_examples": [],
+      "missing_expected_columns": [],
+      "unexpected_extra_columns": [],
+      "non_tab_delimiter_suspected": false,
+      "read_error": null,
+      "other_anomalies": [
+        "Ground-truth file: header reported as-is; not compared against source-file column list because its structure is expected to differ."
+      ]
+    },
+    {
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_source1.tsv",
+      "role": "source",
+      "size_bytes": 210069713,
+      "encoding_used": "utf-8",
+      "encoding_error": null,
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "header_field_count": 4,
+      "data_row_count": 2206821,
+      "blank_row_count": 0,
+      "duplicate_header_count": 0,
+      "malformed_row_count": 0,
+      "malformed_row_examples": [],
+      "missing_expected_columns": [],
+      "unexpected_extra_columns": [],
+      "non_tab_delimiter_suspected": false,
+      "read_error": null,
+      "other_anomalies": []
+    },
+    {
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_source2.tsv",
+      "role": "source",
+      "size_bytes": 489301488,
+      "encoding_used": "utf-8",
+      "encoding_error": null,
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "header_field_count": 4,
+      "data_row_count": 5034616,
+      "blank_row_count": 0,
+      "duplicate_header_count": 0,
+      "malformed_row_count": 0,
+      "malformed_row_examples": [],
+      "missing_expected_columns": [],
+      "unexpected_extra_columns": [],
+      "non_tab_delimiter_suspected": false,
+      "read_error": null,
+      "other_anomalies": []
+    },
+    {
+      "path": "D:\\Documents\\PARTH\\AmazonML\\AmazonMLchallenge\\student_resource\\dataset\\train\\train_source3.tsv",
+      "role": "source",
+      "size_bytes": 503705637,
+      "encoding_used": "utf-8",
+      "encoding_error": null,
+      "header": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "header_field_count": 4,
+      "data_row_count": 5285603,
+      "blank_row_count": 0,
+      "duplicate_header_count": 0,
+      "malformed_row_count": 0,
+      "malformed_row_examples": [],
+      "missing_expected_columns": [],
+      "unexpected_extra_columns": [],
+      "non_tab_delimiter_suspected": false,
+      "read_error": null,
+      "other_anomalies": []
+    }
+  ]
+}
