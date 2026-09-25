@@ -1,0 +1,14 @@
+﻿# Amazon ML Challenge raw dataset - NEVER commit
+/student_resource/dataset/**
+# Python
+__pycache__/
+*.py[cod]
+# Virtual environments
+.venv/
+venv/
+# Environment/secrets
+.env
+.env.*
+# OS/editor files
+.DS_Store
+Thumbs.db
