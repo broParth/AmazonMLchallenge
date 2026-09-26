@@ -20,12 +20,20 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from common import format_rss, stream_tsv_rows
+# from common import format_rss, stream_tsv_rows
+# from evaluate_f05 import read_match_tsv
+# from v1_pipeline import (
+#     SOURCE_COLUMNS,
+#     build_s1_compact_index,
+#     extract_candidates_for_row,
+# )
+from common import stream_tsv_rows
 from evaluate_f05 import read_match_tsv
 from v1_pipeline import (
     SOURCE_COLUMNS,
     build_s1_compact_index,
     extract_candidates_for_row,
+    format_rss,
 )
 
 
